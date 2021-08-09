@@ -1,10 +1,31 @@
-variable "project" {
+variable project {
   description = "Project ID"
 }
-variable "region" {
+
+variable region {
   description = "Region"
-  default     = "europe-north-1"
+
+  # Значение по умолчанию
+  default = "europe-north1"
 }
-variable "disk_image" {
+
+variable disk_image {
   description = "Disk image"
+}
+
+variable zone {
+  description = "Zone"
+
+  #Значение по умолчанию
+  default = "europe-north1-a"
+}
+
+variable "app_disk_image" {
+  description = "Disk image for reddit app"
+  default     = "reddit-app-1628544574"
+}
+
+variable "db_disk_image" {
+  description = "Disk image for reddit db"
+  default     = "reddit-db-1628544780"
 }
