@@ -1,5 +1,5 @@
-variable zone {
-description = "Zone"
+variable "zone" {
+  description = "Zone"
 }
 variable "app_disk_image" {
   description = "Disk image for reddit app"

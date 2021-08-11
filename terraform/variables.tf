@@ -1,19 +1,19 @@
-variable project {
+variable "project" {
   description = "Project ID"
 }
 
-variable region {
+variable "region" {
   description = "Region"
 
   # Значение по умолчанию
   default = "europe-north1"
 }
 
-variable disk_image {
+variable "disk_image" {
   description = "Disk image"
 }
 
-variable zone {
+variable "zone" {
   description = "Zone"
 
   #Значение по умолчанию
