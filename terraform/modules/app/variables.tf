@@ -3,5 +3,5 @@ variable "zone" {
 }
 variable "app_disk_image" {
   description = "Disk image for reddit app"
-  default     = "reddit-app-1628544574"
+  default     = "reddit-app-1629315391"
 }
