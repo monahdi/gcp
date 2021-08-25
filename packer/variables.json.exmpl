@@ -1,0 +1,5 @@
+{
+    "project_id": "project-123456",
+    "source_image_family": "ubuntu-1604-lts",
+    "machine_type": "a2-micro"
+}
