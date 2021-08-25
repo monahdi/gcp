@@ -13,7 +13,7 @@
             "image_family": "reddit-app",
             "source_image_family": "{{user `source_image_family`}}",
             "zone": "europe-north1-a",
-            "ssh_username": "sroot",
+            "ssh_username": "dkroot",
             "machine_type": "{{user `machine_type`}}",
             "disk_size": "50",
             "disk_type": "pd-standard",
@@ -23,7 +23,7 @@
     "provisioners": [
         {
             "type": "ansible",
-            "playbook_file": "ansible/packer_app.yml"
+            "playbook_file": "ansible/playbooks/packer_app.yml"
         }
     ]
 }

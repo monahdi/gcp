@@ -2,6 +2,7 @@
 resource "google_compute_address" "db_ip" {
   name = "reddit-db-ip"
 }
+
 resource "google_compute_instance" "db" {
   name         = "reddit-db"
   machine_type = "e2-small"
@@ -18,6 +19,11 @@ resource "google_compute_instance" "db" {
       nat_ip = google_compute_address.db_ip.address
     }
   }
+}
+resource "google_compute_address" "internal" {
+  name         = "internal-address"
+  address_type = "INTERNAL"
+  purpose      = "GCE_ENDPOINT"
 }
 
 # Правило firewall
